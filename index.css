@@ -1,3 +1,88 @@
 /*Обнуление*/
 *{	padding: 0;	margin: 0;	border: 0;}*,*:before,*:after{	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;}:focus,:active{outline: none;}a:focus,a:active{outline: none;}nav,footer,header,aside{display: block;}html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}input,button,textarea{font-family:inherit;}input::-ms-clear{display: none;}button{cursor: pointer;}button::-moz-focus-inner {padding:0;border:0;}a, a:visited{text-decoration: none;}a:hover{text-decoration: none;}ul li{list-style: none;}img{vertical-align: top;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+body{
+	font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   color:#533738;
+}
+.header{
+   background: url('img/hero.jpg') no-repeat;
+	padding-top: 36px;
+	padding-bottom: 168px;
+	background-size: cover;
+}
+
+/*Блок меню*/
+.nav {
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+}
+.nav a {
+   color:inherit;
+   font-size: 16px;
+}
+.logo {   
+   margin-right: 89px;
+}
+.logo__link {
+   display: flex; 
+   align-items: center; 
+}
+.logo__image {
+  display: block;
+}
+.logo__name {
+   text-transform: uppercase;
+}
+.menu a:hover {
+   color:#CC8B86;
+}
+.menu__item {
+   display: inline-block;
+   margin-right: 26px;
+}
+.menu__item:last-child{
+   margin-right: 0;
+}
+a[href^="tel:"]{
+   margin-left: 35px;
+}
+
+/*Блок Hero*/
+.hero {
+   width: 493px;
+   margin-left: 184px;
+   margin-top: 91px;
+}
+.title {
+   font-size: 50px;
+   line-height: 62px;
+   letter-spacing: 0em;
+   text-align: left;
+}
+.title__lead {
+   font-size: 18px;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-top: 24px;
+   width:90%;
+}
+.hero__button {   
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   padding: 25px 67px;
+   background-color: #CC8B86;
+   margin-top: 21px;
+   color:inherit;
+   display: inline-block;
+   transition:all 0.3s ease-in;
+}
+.hero__button:hover{
+   border-radius: 30px;
+}
